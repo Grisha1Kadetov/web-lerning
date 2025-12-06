@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LunchTime Москва — доставка бизнес-ланчей</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Ubuntu";
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            color: #333333;
+            background-color: #fafafa;
+        }
+
+        header {
+            margin: 0;
+            padding: 20px 40px;
+            background-color: #ffefe0;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #d35400;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333333;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #d35400;
+        }
+
+        main {
+            margin: 0;
+            padding: 30px 40px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        section {
+            margin: 20px 0 40px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #d35400;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about img {
+            width: 260px;
+            height: 200px;
+            object-fit: cover;
+            flex: 1 5 260px;
+            border-radius: 8px;
+        }
+
+        .about-text {
+            flex: 5 1 260px;
+        }
+
+        .advantages ul {
+            margin: 10px 0px 0 20px;
+            padding: 0;
+        }
+
+        .advantages li {
+            margin-bottom: 8px;
+        }
+
+        .popular-dishes table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .popular-dishes th,
+        .popular-dishes td {
+            padding: 10px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+
+        .popular-dishes th {
+            background-color: #ffe0c2;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            margin: 0;
+            padding: 20px 40px;
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #ffffff;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #ffd7b3;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        /* Адаптив немного */
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-inner">
+            <h1>LunchTime</h1>
+            <nav>
+                <a href="index.html">О нас</a>
+                <a href="#">Меню</a>
+                <a href="#">Собрать ланч</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- Блок о компании -->
+            <section class="about">
+                <img src="https://canapeclub.ru/image/cache/catalog/product/30-10-2019/lanch%E2%84%965-818x818.jpg" alt="Бизнес-ланч">
+                <div class="about-text">
+                    <h2>О компании</h2>
+                    <p>
+                        LunchTime — это быстрая и удобная доставка бизнес-ланчей по всей Москве.
+                        Мы готовим свежие блюда каждый день и привозим их точно к вашему обеду —
+                        в офис или домой. Все ланчи можно собрать под ваши вкусы: выбирайте суп,
+                        салат, горячее и десерт в несколько кликов.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Блок с преимуществами -->
+            <section class="advantages">
+                <h2>Почему выбирают нас</h2>
+                <ul>
+                    <li>Доставка от 30 минут по Москве в пределах МКАД.</li>
+                    <li>Ежедневно обновляемое меню из свежих продуктов.</li>
+                    <li>Удобный конструктор бизнес-ланча под любой вкус и бюджет.</li>
+                </ul>
+            </section>
+
+            <!-- Блок с популярными блюдами -->
+            <section class="popular-dishes">
+                <h2>Популярные блюда</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Блюдо</th>
+                            <th>Категория</th>
+                            <th>Описание</th>
+                            <th>Цена, ₽</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Крем-суп из тыквы</td>
+                            <td>Суп</td>
+                            <td>Нежный суп на овощном бульоне с сливками и сухариками.</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <td>Цезарь с курицей</td>
+                            <td>Салат</td>
+                            <td>Классический салат с хрустящими сухариками и пармезаном.</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>Куриное филе с рисом</td>
+                            <td>Горячее</td>
+                            <td>Запечённая курица с ароматным рисом и овощами.</td>
+                            <td>280</td>
+                        </tr>
+                        <tr>
+                            <td>Паста с лососем</td>
+                            <td>Горячее</td>
+                            <td>Паста в сливочном соусе с кусочками лосося.</td>
+                            <td>320</td>
+                        </tr>
+                        <tr>
+                            <td>Чизкейк ванильный</td>
+                            <td>Десерт</td>
+                            <td>Нежный чизкейк на песочной основе с ванильным вкусом.</td>
+                            <td>190</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+    </main>
+
+    <footer id="contacts">
+        <div class="footer-inner">
+            <p>© 2025 LunchTime</p>
+            <p>Телефон: <a href="tel:+74951234567">+7 (123) 456-78-90</a></p>
+            <p>E-mail: <a href="mailto:help@lunchtime.ru">help@lunchtime.ru</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
