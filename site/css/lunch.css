@@ -1,0 +1,131 @@
+.page-intro {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.page-title {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    color: #d35400;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 35px;
+    background-color: #ffffff;
+    cursor: pointer;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    border: 2px solid #ffffff;
+    transition: border 0.2s ease, background-color 0.2s ease;
+}
+
+.dish-card:hover {
+    border: 2px solid tomato;
+}
+
+.dish-card:hover .dish-button {
+    background-color: tomato;
+    color: #ffffff;
+}
+
+.dish-card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 35px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.dish-price {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.dish-name {
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+}
+
+.dish-weight {
+    margin: 0;
+    color: #777777;
+}
+
+.dish-bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 6px;
+}
+
+/* кнопка */
+.dish-button {
+    background-color: #f1eee9;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-section h2 {
+        text-align: center;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+}

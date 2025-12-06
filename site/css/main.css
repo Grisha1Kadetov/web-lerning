@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333333;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0;
+    padding: 20px 40px;
+    background-color: #ffefe0;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #d35400;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333333;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: tomato;
+}
+
+/* активный пункт меню */
+#active {
+    color: tomato;
+    font-weight: 500;
+}
+
+main {
+    margin: 0;
+    padding: 30px 40px;
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section {
+    margin: 20px 0 40px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #d35400;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    flex: 1 5 260px;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 5 1 260px;
+}
+
+.advantages ul {
+    margin: 10px 0px 0 20px;
+    padding: 0;
+}
+
+.advantages li {
+    margin-bottom: 8px;
+}
+
+.popular-dishes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.popular-dishes th,
+.popular-dishes td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.popular-dishes th {
+    background-color: #ffe0c2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin: 0;
+    padding: 20px 40px;
+    background-color: #333333;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffd7b3;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .about img {
+        width: 500px;
+        height: auto;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .popular-dishes th,
+    .popular-dishes td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .popular-dishes th,
+    .popular-dishes td {
+        font-size: 12px;
+    }
+}
