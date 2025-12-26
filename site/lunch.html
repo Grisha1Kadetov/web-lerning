@@ -33,27 +33,195 @@
     <main>
         <div class="container">
 
-            <section class="page-intro">
-                <h1 class="page-title">Собрать ланч</h1>
-                <p>Выберите суп, горячее и напиток — мы соберём ваш идеальный бизнес-ланч и доставим к удобному времени.
-                </p>
-            </section>
+        <section class="page-intro">
+            <h1 class="page-title">Собрать ланч</h1>
+            <p>Выберите суп, горячее и напиток — мы соберём ваш идеальный бизнес-ланч и доставим к удобному времени.
+            </p>
+        </section>
+        
+        <section class="lunch-variants">
+            <h2>Доступные для заказа варианты:</h2>
+            
+            <div class="variants-grid">
+        
+                <!-- Вариант 1 -->
+                <div class="variant">
+                    <span class="variant-number">1</span>
+            
+                    <div class="variant-dishes">
+                        <div class="variant-item">
+                            <img src="icons/soup.png" alt="Суп">
+                            <span>Суп</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/main.png" alt="Главное блюдо">
+                            <span>Главное блюдо</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/salad.png" alt="Салат">
+                            <span>Салат</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/drink.png" alt="Напиток">
+                            <span>Напиток</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вариант 2 -->
+                <div class="variant">
+                    <span class="variant-number">2</span>
+            
+                    <div class="variant-dishes">
+                        <div class="variant-item">
+                            <img src="icons/soup.png" alt="Суп">
+                            <span>Суп</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/main.png" alt="Главное блюдо">
+                            <span>Главное блюдо</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/drink.png" alt="Напиток">
+                            <span>Напиток</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вариант 3 -->
+                <div class="variant">
+                    <span class="variant-number">3</span>
+            
+                    <div class="variant-dishes">
+                        <div class="variant-item">
+                            <img src="icons/soup.png" alt="Суп">
+                            <span>Суп</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/salad.png" alt="Салат">
+                            <span>Салат</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/drink.png" alt="Напиток">
+                            <span>Напиток</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вариант 4 -->
+                <div class="variant">
+                    <span class="variant-number">4</span>
+            
+                    <div class="variant-dishes">
+                        <div class="variant-item">
+                            <img src="icons/main.png" alt="Главное блюдо">
+                            <span>Главное блюдо</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/salad.png" alt="Салат">
+                            <span>Салат</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/drink.png" alt="Напиток">
+                            <span>Напиток</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Вариант 5 -->
+                <div class="variant">
+                    <span class="variant-number">5</span>
+            
+                    <div class="variant-dishes">
+                        <div class="variant-item">
+                            <img src="icons/main.png" alt="Главное блюдо">
+                            <span>Главное блюдо</span>
+                        </div>
+                        <div class="variant-item">
+                            <img src="icons/drink.png" alt="Напиток">
+                            <span>Напиток</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вариант: Десерт -->
+                <div class="variant variant-dessert">
+                    <span class="variant-number">🍰</span>
+                
+                    <div class="variant-dishes">
+                        <div class="variant-item">
+                            <img src="icons/desert.png" alt="Десерт">
+                            <span class="variant-label">Десерт</span>
+                        </div>
+                        <span class="variant-note">(Можно добавить к любому заказу)</span>
+                    </div>
+                </div>
+            </div>
+        </selection>
+
+
+
 
         <!-- Супы -->
         <section class="menu-section" id="soups">
             <h2>Супы</h2>
+            <div class="filters">
+                <button data-kind="fish">Рыбный</button>
+                <button data-kind="meat">Мясной</button>
+                <button data-kind="veg">Вегетарианский</button>
+                <button data-kind="all" class="active">Все</button>
+            </div>
             <div class="menu-grid"></div>
         </section>
         
         <!-- Главные блюда -->
         <section class="menu-section" id="mains">
             <h2>Горячие блюда</h2>
+            <div class="filters">
+                <button data-kind="fish">Рыбное</button>
+                <button data-kind="meat">Мясное</button>
+                <button data-kind="veg">Вегетарианское</button>
+                <button data-kind="all" class="active">Все</button>
+            </div>
+            <div class="menu-grid"></div>
+        </section>
+
+        <!-- Салаты -->
+        <section class="menu-section" id="salads">
+            <h2>Салаты и стартеры</h2>
+        
+            <div class="filters">
+                <button data-kind="fish">Рыбный</button>
+                <button data-kind="meat">Мясной</button>
+                <button data-kind="veg">Вегетарианский</button>
+                <button data-kind="all" class="active">Все</button>
+            </div>
+        
             <div class="menu-grid"></div>
         </section>
         
         <!-- Напитки -->
         <section class="menu-section" id="drinks">
             <h2>Напитки</h2>
+            <div class="filters">
+                <button data-kind="cold">Холодный</button>
+                <button data-kind="hot">Горячий</button>
+                <button data-kind="all" class="active">Все</button>
+            </div>
+            <div class="menu-grid"></div>
+        </section>
+
+        <!-- Десерты -->
+        <section class="menu-section" id="desserts">
+            <h2>Десерты</h2>
+        
+            <div class="filters">
+                <button data-kind="small">Маленькая порция</button>
+                <button data-kind="medium">Средняя порция</button>
+                <button data-kind="large">Большая порция</button>
+                <button data-kind="all" class="active">Все</button>
+            </div>
+        
             <div class="menu-grid"></div>
         </section>
 
