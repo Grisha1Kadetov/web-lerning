@@ -34,11 +34,6 @@
     border: 2px solid tomato;
 }
 
-.dish-card:hover .dish-button {
-    background-color: tomato;
-    color: #ffffff;
-}
-
 .dish-card img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -81,6 +76,11 @@
     font-size: 16px;
     transition: background-color 0.2s ease, color 0.2s ease;
     margin-top: 10px;
+}
+
+.dish-button:hover {
+    background-color: tomato;
+    color: #ffffff;
 }
 
 .order-form-section {

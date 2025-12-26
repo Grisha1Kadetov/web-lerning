@@ -13,10 +13,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/lunch.css">
+    <script src="js/dishes.js" defer></script>
+    <script src="js/render.js" defer></script>
+    <script src="js/order.js" defer></script>
 </head>
 
 <body>
-
     <header>
         <div class="header-inner">
             <h1>LunchTime</h1>
@@ -37,122 +39,23 @@
                 </p>
             </section>
 
-            <!-- Супы -->
-            <section class="menu-section">
-                <h2>Супы</h2>
-                <div class="menu-grid">
-                    <div class="dish-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZZXz1icgds3juru-Js01MYd0PH07O1LHv2w&s"
-                            alt="Крем-суп из тыквы">
-                        <p class="dish-price">190 ₽</p>
-                        <p class="dish-name">Крем-суп из тыквы</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">250 мл</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="https://aif-s3.aif.ru/images/013/788/4fc475dcc8aada55269d2a7bd92401fb.jpg"
-                            alt="Куриный суп с лапшой">
-                        <p class="dish-price">210 ₽</p>
-                        <p class="dish-name">Куриный суп с домашней лапшой</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">300 мл</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMy00uZSsYSczD0IgHuT355LFuysoIMjgVYA&s"
-                            alt="Том ям">
-                        <p class="dish-price">260 ₽</p>
-                        <p class="dish-name">Пряный суп Том ям с креветками</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">300 мл</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Главные блюда -->
-            <section class="menu-section" id="mains">
-                <h2>Горячие блюда</h2>
-                <div class="menu-grid">
-                    <div class="dish-card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEIEWSYbEI-Wzn6LKruurkqbr1TJlH9jlwQ&s"
-                            alt="Куриное филе с рисом">
-                        <p class="dish-price">280 ₽</p>
-                        <p class="dish-name">Куриное филе с рисом и овощами</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">320 г</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80"
-                            alt="Паста с лососем">
-                        <p class="dish-price">320 ₽</p>
-                        <p class="dish-name">Паста с лососем в сливочном соусе</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">350 г</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80"
-                            alt="Говядина с овощами">
-                        <p class="dish-price">340 ₽</p>
-                        <p class="dish-name">Тушёная говядина с овощами и картофелем по-домашнему</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">330 г</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Напитки -->
-            <section class="menu-section" id="drinks">
-                <h2>Напитки</h2>
-                <div class="menu-grid">
-                    <div class="dish-card">
-                        <img src="https://lifehacker.ru/wp-content/uploads/2019/09/8C304672-1662-4C9C-8073-685B93CC2B4B_1569436750.jpeg"
-                            alt="Морс">
-                        <p class="dish-price">90 ₽</p>
-                        <p class="dish-name">Домашний клюквенный морс</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">250 мл</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="https://avatars.mds.yandex.net/get-vertis-journal/4080458/a7514b44-b93a-4433-92e8-4047ef8615dd.jpeg/1600x1600"
-                            alt="Чай">
-                        <p class="dish-price">70 ₽</p>
-                        <p class="dish-name">Чай чёрный с лимоном</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">300 мл</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="https://static.vkusnyblog.com/full/uploads/2013/07/myatnyi-limonad.jpg"
-                            alt="Лимонад">
-                        <p class="dish-price">110 ₽</p>
-                        <p class="dish-name">Домашний лимонад с мятой</p>
-                        <div class="dish-bottom">
-                            <p class="dish-weight">250 мл</p>
-                            <button class="dish-button">Добавить</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <!-- Супы -->
+        <section class="menu-section" id="soups">
+            <h2>Супы</h2>
+            <div class="menu-grid"></div>
+        </section>
+        
+        <!-- Главные блюда -->
+        <section class="menu-section" id="mains">
+            <h2>Горячие блюда</h2>
+            <div class="menu-grid"></div>
+        </section>
+        
+        <!-- Напитки -->
+        <section class="menu-section" id="drinks">
+            <h2>Напитки</h2>
+            <div class="menu-grid"></div>
+        </section>
 
             <!-- Форма -->
             <section class="order-form-section">
@@ -163,34 +66,14 @@
                     <!-- Данные заказа -->
                     <fieldset class="form-block">
                         <legend>Ваш заказ</legend>
-            
-                        <!-- Суп -->
-                        <label for="soup">Выберите суп:</label>
-                        <select id="soup" name="soup" required>
-                            <option value="">— Выберите суп —</option>
-                            <option value="pumpkin_soup">Крем-суп из тыквы</option>
-                            <option value="chicken_noodle">Куриный суп с лапшой</option>
-                            <option value="tom_yam">Том Ям</option>
-                        </select>
-            
-                        <!-- Главное блюдо -->
-                        <label for="main">Выберите горячее:</label>
-                        <select id="main" name="main" required>
-                            <option value="">— Выберите горячее —</option>
-                            <option value="chicken_rice">Куриное филе с рисом</option>
-                            <option value="salmon_pasta">Паста с лососем</option>
-                            <option value="beef_stew">Говядина с овощами</option>
-                        </select>
-            
-                        <!-- Напиток -->
-                        <label for="drink">Выберите напиток:</label>
-                        <select id="drink" name="drink" required>
-                            <option value="">— Выберите напиток —</option>
-                            <option value="mors">Клюквенный морс</option>
-                            <option value="tea">Чёрный чай</option>
-                            <option value="lemonade">Лимонад</option>
-                        </select>
-            
+
+                        <div id="order-block">
+                            <p class="order-empty">Ничего не выбрано</p>
+                        </div>
+                        <div id="order-price" style="display: none; margin-top: 20px;">
+                            <strong>Стоимость заказа: <span id="order-sum">0</span> ₽</strong>
+                        </div>
+
                         <!-- Комментарий -->
                         <label for="comment">Комментарий к заказу:</label>
                         <textarea id="comment" name="comment" rows="4"></textarea>
